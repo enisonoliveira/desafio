@@ -7,6 +7,13 @@ public class CustomerParams {
     private String cpf;
     private AddressParams address;
     
+    public CustomerParams(String name, String cpf, AddressParams address) {
+        this.name = name;
+        this.cpf = cpf;
+        this.address = address;
+    }
+
+
     public String getName() {
         return name;
     }

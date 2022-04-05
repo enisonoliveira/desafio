@@ -17,28 +17,36 @@ public class AddressRequest {
     private String city;
     private int number;
     private String state;
-    private int  AddressTypeId ;
+    private AddressType  AddressTypeId ;
+
+    public AddressRequest(String addressId, String address, String neigborHood, String zipCode, String city, int number,
+            String state, AddressType addressTypeId) {
+        this.addressId = addressId;
+        this.address = address;
+        this.neigborHood = neigborHood;
+        this.zipCode = zipCode;
+        this.city = city;
+        this.number = number;
+        this.state = state;
+        AddressTypeId = addressTypeId;
+    }
 
     public String getAddress() {
         return address;
     }
     
-    public int getAddressTypeId() {
+    public AddressType getAddressTypeId() {
+        if(AddressTypeId ==null){
+            return AddressType.AIRPORT;
+        }
         return AddressTypeId;
     }
 
-    public void setAddressTypeId(int addressTypeId) {
+    public void setAddressTypeId(AddressType addressTypeId) {
         this.AddressTypeId = addressTypeId;
     }
 
-    public AddressType getAddressType() {
-        return AddressType.parse(AddressTypeId);
-    }
-
-    public void setAddressType(int AddressTypeId) {
-        this.AddressTypeId = AddressTypeId;
-    }
-
+    
     public String getAddressId() {
         return addressId;
     }

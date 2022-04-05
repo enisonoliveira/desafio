@@ -17,6 +17,13 @@ public class CustomerRequest implements Serializable {
     private AddressRequest address;
    
 
+    public CustomerRequest(String customerId, String name, String cpf, AddressRequest address) {
+        this.customerId = customerId;
+        this.name = name;
+        this.cpf = cpf;
+        this.address = address;
+    }
+
     public String getCpf() {
         return cpf;
     }

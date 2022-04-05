@@ -1,13 +1,18 @@
 package desafio.ibm.app.controller;
 
-import java.util.Optional;
+import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,11 +34,17 @@ import desafio.ibm.app.service.contract.CustomerJpaController;
 @Controller
 public class CustomerController {
 
+	Logger logger = LoggerFactory.getLogger( CustomerController.class);
+
 	@Autowired
 	private CustomerJpaController jpaController;
 
 	@PostMapping(value = "/customer/save", consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<String> create(@RequestBody CustomerRequest customerRequest) {
+	public ResponseEntity<String> create(@RequestBody CustomerParams customerRequest) throws Exception {
+
+		logger.info("inserindo cliente"+customerRequest.getName());
+		logger.info("inserindo endereço"+customerRequest.getAddress().getAddress());
+		logger.info("tipo endereço"+customerRequest.getAddress().getAddressTypeId().getType());
 
 		Customer customer = new Customer();
 		customer.setName(customerRequest.getName());
@@ -45,15 +56,23 @@ public class CustomerController {
 		address.setZipCode(customerRequest.getAddress().getZipCode());
 		address.setCity(customerRequest.getAddress().getCity());
 		address.setNumber(customerRequest.getAddress().getNumber());
-		address.setAddressTypeId(customerRequest.getAddress().getAddressType());
+		address.setState(customerRequest.getAddress().getState());
+		address.setAddressTypeId(customerRequest.getAddress().getAddressTypeId());
+
+
+		jpaController.create(address);
 
 		customer.setAddress(address);
 
-		return new ResponseEntity<String>("idcustomer:" + customer.getCustomerId(), HttpStatus.OK);
+		jpaController.create(customer);
+
+	
+		return new ResponseEntity<String>("inserido id:" + customer.getCustomerId(), HttpStatus.CREATED);
+
 	}
 
-	@PostMapping(value = "/customer/edit", consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<String> edit(@RequestBody CustomerRequest customerRequest) {
+	@PutMapping(value = "/customer/edit", consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> edit(@RequestBody CustomerRequest customerRequest) throws Exception {
 
 		Customer customer = new Customer();
 		customer.setName(customerRequest.getName());
@@ -67,40 +86,42 @@ public class CustomerController {
 		address.setZipCode(customerRequest.getAddress().getZipCode());
 		address.setCity(customerRequest.getAddress().getCity());
 		address.setNumber(customerRequest.getAddress().getNumber());
+		address.setState(customerRequest.getAddress().getState());
 		address.setAddressId(customerRequest.getAddress().getAddressId());
-		address.setAddressTypeId(customerRequest.getAddress().getAddressType());
+		address.setAddressTypeId(customerRequest.getAddress().getAddressTypeId());
+	
+		jpaController.edit(address);
 
 		customer.setAddress(address);
 
-		return new ResponseEntity<String>("idcustomer:" + customer.getCustomerId(), HttpStatus.OK);
+		jpaController.edit(customer);
+
+		return new ResponseEntity<String>("editado idcustomer:" + customer.getCustomerId(), HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/customer/delete/id", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody ResponseEntity<String> searchList(String id) throws Exception {
+	@DeleteMapping(path = "/customer/delete/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+	public  ResponseEntity<String> searchList(@PathVariable String id) throws Exception {
 
 		jpaController.destroy(id);
-		return new ResponseEntity<String>("Deleted:", HttpStatus.OK);
+
+		return new ResponseEntity<>("Deleted:"+id, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/customer/search", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody Optional<Customer> searchOne(
-			@RequestBody CustomerParams customerParams) {
-		Customer customer = new Customer();
-		customer.setName(customerParams.getName());
-		customer.setCpf(customerParams.getCpf());
+	@RequestMapping(value = "/customer/searchAll", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<Customer> searchAll() {
+	
+		List<Customer> customerList = jpaController.findAll();
 
-		Address address = new Address();
+		return customerList;
+	}
 
-		address.setAddress(customerParams.getAddress().getAddress());
-		address.setNeigborHood(customerParams.getAddress().getNeigborHood());
-		address.setZipCode(customerParams.getAddress().getZipCode());
-		address.setCity(customerParams.getAddress().getCity());
-		address.setNumber(customerParams.getAddress().getNumber());
-		address.setAddressTypeId(customerParams.getAddress().getAddressType());
+	@RequestMapping(value = "/customer/searchOne", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<Customer> searchOne(@RequestBody CustomerParams customerParams) {
+		logger.info("buscando cliente"+customerParams.getName());
 
-		customer.setAddress(address);
+		List<Customer> customerList = jpaController.findCustomer(customerParams);
 
-		Optional<Customer> customerList = jpaController.findCustomer(customer);
+
 		return customerList;
 	}
 

@@ -10,21 +10,21 @@ package desafio.ibm.app.enume;
 public enum AddressType {
 
 
-    AIRPORT(1),
-    AVENUE(2),
-    AREA(3),
-    FIELD(4),
-    FARM(5),
-    COLOGNE(6),
-    CONDOMINIUM(7);
+    AIRPORT("AIRPORT"),
+    AVENU("AVENU"),
+    AREA("AREA"),
+    FIELD("FIELD"),
+    FARM("FARM"),
+    COLOGNE("COLOGNE"),
+    CONDOMINIUM("CONDOMINIUM");
     
-    private final Integer type;
+    private final String type;
     
-    private AddressType(Integer type){
+    private AddressType(String type){
         this.type=type;
     }
 
-    public static AddressType parse(int type) {
+    public static AddressType parse(String type) {
         AddressType address = null; 
         for (AddressType item : AddressType.values()) {
             if (item.getType()==type) {
@@ -32,10 +32,12 @@ public enum AddressType {
                 break;
             }
         }
+
+
         return address;
     }
 
-    public Integer getType(){
+    public String getType(){
         return this.type;
     }
 }

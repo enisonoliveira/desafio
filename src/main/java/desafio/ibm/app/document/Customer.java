@@ -25,7 +25,13 @@ public class Customer implements Serializable {
     private String cpf;
     @DBRef
     private Address address;
-   
+
+
+    public Customer(String name, String cpf, Address address) {
+        this.name = name;
+        this.cpf = cpf;
+        this.address = address;
+    }
 
     public String getCpf() {
         return cpf;

@@ -31,7 +31,18 @@ public class Address {
     @Field("state")
     private String state;
     @Field("addressTypeId")
-    private int addressTypeId;
+    private String addressTypeId;
+    public Address(){}
+    public Address(String address, String neigborHood, String zipCode, String city, int number, String state,
+            String addressTypeId) {
+        this.address = address;
+        this.neigborHood = neigborHood;
+        this.zipCode = zipCode;
+        this.city = city;
+        this.number = number;
+        this.state = state;
+        this.addressTypeId = addressTypeId;
+    }
 
     public String getAddress() {
         return address;
@@ -42,11 +53,11 @@ public class Address {
     public void setAddressId(String addressId) {
         this.addressId = addressId;
     }
-    public int getAddressTypeId() {
+    public String getAddressTypeId() {
         return addressTypeId;
     }
     public void setAddressTypeId(AddressType addressTypeId) {
-        this.addressTypeId = addressTypeId.getType();
+        this.addressTypeId = addressTypeId.toString();
     }
   
     public String getNeigborHood() {

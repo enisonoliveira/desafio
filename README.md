@@ -4,7 +4,7 @@
 #configurando pra rodar com o docker 
 comente a linha na pasta resource configuration.properties  a linha 8 adicionando um # e descomente a linha 12
 
-gerar o demo.jar com o manve rodando o comando > mvn clean package
+gerar o demo.jar com o manve rodando o comando >mvn package -Dmaven.test.skip
 criar o container com o comando > docker build -t api-ibm-eso .
 suba todas as imagem rodando o compose >docker-compose up
 

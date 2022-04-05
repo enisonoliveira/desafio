@@ -1,0 +1,16 @@
+version: "3"
+services:
+  api-database:
+    image: mongo
+    container_name: "api-database"
+    environment:
+      AUTH: "no"
+    ports:
+      - 27017:27017
+      - 28017:28017
+  api:
+    image: api-ibm-eso
+    ports:
+      - 9091:8080
+    links:
+      - api-database

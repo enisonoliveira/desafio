@@ -10,3 +10,8 @@ suba todas as imagem rodando o compose >docker-compose up
 
 acesse o swegger na url
 http://localhost:9091/swagger-ui.html#!
+
+exemplo 
+https://user-images.githubusercontent.com/24898873/161849034-11220355-4a76-415e-a220-56cf73d266e3.mp4
+
+

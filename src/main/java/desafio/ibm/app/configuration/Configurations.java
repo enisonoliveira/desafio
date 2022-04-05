@@ -6,9 +6,4 @@ import org.springframework.context.annotation.Configuration;
 public class Configurations {
         
 
-    // @Bean
-    // public CustomerValidate customerValidate(){
-
-    //     return new CustomerValidate();
-    // }
 }

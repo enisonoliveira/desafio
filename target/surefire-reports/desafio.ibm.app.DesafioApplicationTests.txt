@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: desafio.ibm.app.DesafioApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 219.436 s <<< FAILURE! - in desafio.ibm.app.DesafioApplicationTests
+validUpdateIntegrationController  Time elapsed: 30.949 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validUpdateIntegrationController(DesafioApplicationTests.java:75)
+
+validSearchAllController  Time elapsed: 30.21 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validSearchAllController(DesafioApplicationTests.java:95)
+
+validsearchIntegrationOneController  Time elapsed: 30.165 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validsearchIntegrationOneController(DesafioApplicationTests.java:110)
+
+validDeleteIntegrationController  Time elapsed: 30.13 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validDeleteIntegrationController(DesafioApplicationTests.java:85)
+
+addressUnitTestServiceSave  Time elapsed: 29.973 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <: Operação não permitida, nome do cliente obrigatório!> but was: <Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]>
+	at desafio.ibm.app.DesafioApplicationTests.addressUnitTestServiceSave(DesafioApplicationTests.java:163)
+
+validInsertIntegrationController  Time elapsed: 30.068 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validInsertIntegrationController(DesafioApplicationTests.java:60)
+
+customerUnitTestServiceSaveCPFInvalid  Time elapsed: 29.979 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <: Operação não permitida, dados imcompletos, CPF obrigatório!> but was: <Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]>
+	at desafio.ibm.app.DesafioApplicationTests.customerUnitTestServiceSaveCPFInvalid(DesafioApplicationTests.java:145)
+

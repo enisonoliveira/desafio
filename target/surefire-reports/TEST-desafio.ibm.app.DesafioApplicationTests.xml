@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="desafio.ibm.app.DesafioApplicationTests" time="219.436" tests="11" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/enison/Documents/desafio/target/test-classes:/home/enison/Documents/desafio/target/classes:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/2.4.4/spring-boot-starter-data-mongodb-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.4/spring-boot-starter-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot/2.4.4/spring-boot-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.4/spring-boot-autoconfigure-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.4/spring-boot-starter-logging-2.4.4.jar:/home/enison/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/enison/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/enison/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/enison/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/enison/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/enison/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/enison/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-sync/4.1.2/mongodb-driver-sync-4.1.2.jar:/home/enison/.m2/repository/org/mongodb/bson/4.1.2/bson-4.1.2.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-core/4.1.2/mongodb-driver-core-4.1.2.jar:/home/enison/.m2/repository/org/springframework/data/spring-data-mongodb/3.1.6/spring-data-mongodb-3.1.6.jar:/home/enison/.m2/repository/org/springframework/spring-tx/5.3.5/spring-tx-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-context/5.3.5/spring-context-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-beans/5.3.5/spring-beans-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-expression/5.3.5/spring-expression-5.3.5.jar:/home/enison/.m2/repository/org/springframework/data/spring-data-commons/2.4.6/spring-data-commons-2.4.6.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.4.4/spring-boot-starter-data-mongodb-reactive-2.4.4.jar:/home/enison/.m2/repository/io/projectreactor/reactor-core/3.4.4/reactor-core-3.4.4.jar:/home/enison/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-reactivestreams/4.1.2/mongodb-driver-reactivestreams-4.1.2.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.4/spring-boot-starter-web-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.4/spring-boot-starter-json-2.4.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.4/spring-boot-starter-tomcat-2.4.4.jar:/home/enison/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.44/tomcat-embed-core-9.0.44.jar:/home/enison/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.44/tomcat-embed-websocket-9.0.44.jar:/home/enison/.m2/repository/org/springframework/spring-web/5.3.5/spring-web-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-aop/5.3.5/spring-aop-5.3.5.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.4/spring-boot-starter-validation-2.4.4.jar:/home/enison/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/home/enison/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.7.Final/hibernate-validator-6.1.7.Final.jar:/home/enison/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/enison/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/enison/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.4.4/spring-boot-starter-test-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-test/2.4.4/spring-boot-test-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.4.4/spring-boot-test-autoconfigure-2.4.4.jar:/home/enison/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/home/enison/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/enison/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/enison/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/enison/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/enison/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/enison/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/home/enison/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.1/junit-jupiter-5.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/home/enison/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/enison/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/enison/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/home/enison/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:/home/enison/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/home/enison/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/enison/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/enison/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/home/enison/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.28/mockito-junit-jupiter-3.6.28.jar:/home/enison/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/enison/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/enison/.m2/repository/org/springframework/spring-core/5.3.5/spring-core-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-jcl/5.3.5/spring-jcl-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-test/5.3.5/spring-test-5.3.5.jar:/home/enison/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger2/2.7.0/springfox-swagger2-2.7.0.jar:/home/enison/.m2/repository/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar:/home/enison/.m2/repository/io/swagger/swagger-models/1.5.13/swagger-models-1.5.13.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/home/enison/.m2/repository/io/springfox/springfox-spi/2.7.0/springfox-spi-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-core/2.7.0/springfox-core-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-schema/2.7.0/springfox-schema-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger-common/2.7.0/springfox-swagger-common-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar:/home/enison/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar:/home/enison/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/home/enison/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/enison/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/enison/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/enison/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/home/enison/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/home/enison/.m2/repository/org/mapstruct/mapstruct/1.1.0.Final/mapstruct-1.1.0.Final.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar:/home/enison/.m2/repository/io/projectreactor/reactor-test/3.4.4/reactor-test-3.4.4.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="BR"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/enison/Documents/desafio/target/surefire/surefirebooter15006179872174821503.jar /home/enison/Documents/desafio/target/surefire 2022-04-05T17-49-54_072-jvmRun1 surefire10855170828077564711tmp surefire_05073522711380365156tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/enison/Documents/desafio/target/test-classes:/home/enison/Documents/desafio/target/classes:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/2.4.4/spring-boot-starter-data-mongodb-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.4/spring-boot-starter-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot/2.4.4/spring-boot-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.4/spring-boot-autoconfigure-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.4/spring-boot-starter-logging-2.4.4.jar:/home/enison/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/enison/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/enison/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/enison/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/enison/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/enison/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/enison/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-sync/4.1.2/mongodb-driver-sync-4.1.2.jar:/home/enison/.m2/repository/org/mongodb/bson/4.1.2/bson-4.1.2.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-core/4.1.2/mongodb-driver-core-4.1.2.jar:/home/enison/.m2/repository/org/springframework/data/spring-data-mongodb/3.1.6/spring-data-mongodb-3.1.6.jar:/home/enison/.m2/repository/org/springframework/spring-tx/5.3.5/spring-tx-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-context/5.3.5/spring-context-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-beans/5.3.5/spring-beans-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-expression/5.3.5/spring-expression-5.3.5.jar:/home/enison/.m2/repository/org/springframework/data/spring-data-commons/2.4.6/spring-data-commons-2.4.6.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.4.4/spring-boot-starter-data-mongodb-reactive-2.4.4.jar:/home/enison/.m2/repository/io/projectreactor/reactor-core/3.4.4/reactor-core-3.4.4.jar:/home/enison/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/enison/.m2/repository/org/mongodb/mongodb-driver-reactivestreams/4.1.2/mongodb-driver-reactivestreams-4.1.2.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.4/spring-boot-starter-web-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.4/spring-boot-starter-json-2.4.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/home/enison/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.4/spring-boot-starter-tomcat-2.4.4.jar:/home/enison/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.44/tomcat-embed-core-9.0.44.jar:/home/enison/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.44/tomcat-embed-websocket-9.0.44.jar:/home/enison/.m2/repository/org/springframework/spring-web/5.3.5/spring-web-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-aop/5.3.5/spring-aop-5.3.5.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.4/spring-boot-starter-validation-2.4.4.jar:/home/enison/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/home/enison/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.7.Final/hibernate-validator-6.1.7.Final.jar:/home/enison/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/enison/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/enison/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.4.4/spring-boot-starter-test-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-test/2.4.4/spring-boot-test-2.4.4.jar:/home/enison/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.4.4/spring-boot-test-autoconfigure-2.4.4.jar:/home/enison/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/home/enison/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/enison/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/enison/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/enison/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/enison/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/enison/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/home/enison/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.1/junit-jupiter-5.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/home/enison/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/enison/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/enison/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/home/enison/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/home/enison/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:/home/enison/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/home/enison/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/enison/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/enison/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/home/enison/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.28/mockito-junit-jupiter-3.6.28.jar:/home/enison/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/enison/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/enison/.m2/repository/org/springframework/spring-core/5.3.5/spring-core-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-jcl/5.3.5/spring-jcl-5.3.5.jar:/home/enison/.m2/repository/org/springframework/spring-test/5.3.5/spring-test-5.3.5.jar:/home/enison/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger2/2.7.0/springfox-swagger2-2.7.0.jar:/home/enison/.m2/repository/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar:/home/enison/.m2/repository/io/swagger/swagger-models/1.5.13/swagger-models-1.5.13.jar:/home/enison/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/home/enison/.m2/repository/io/springfox/springfox-spi/2.7.0/springfox-spi-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-core/2.7.0/springfox-core-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-schema/2.7.0/springfox-schema-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger-common/2.7.0/springfox-swagger-common-2.7.0.jar:/home/enison/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar:/home/enison/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar:/home/enison/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/home/enison/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/enison/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/enison/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/enison/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/home/enison/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/home/enison/.m2/repository/org/mapstruct/mapstruct/1.1.0.Final/mapstruct-1.1.0.Final.jar:/home/enison/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar:/home/enison/.m2/repository/io/projectreactor/reactor-test/3.4.4/reactor-test-3.4.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/enison"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-02-08"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/enison/Documents/desafio"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/enison/Documents/desafio/target/surefire/surefirebooter15006179872174821503.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14.1+1-Ubuntu-0ubuntu1.20.04"/>
+    <property name="user.name" value="enison"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.13.0-39-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/enison/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.14.1"/>
+    <property name="user.dir" value="/home/enison/Documents/desafio"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.14.1+1-Ubuntu-0ubuntu1.20.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="validUpdateIntegrationController" classname="desafio.ibm.app.DesafioApplicationTests" time="30.949">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validUpdateIntegrationController(DesafioApplicationTests.java:75)
+]]></failure>
+    <system-out><![CDATA[17:49:55.781 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:49:55.809 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:49:55.921 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [desafio.ibm.app.DesafioApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:49:55.972 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [desafio.ibm.app.DesafioApplicationTests], using SpringBootContextLoader
+17:49:55.992 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [desafio.ibm.app.DesafioApplicationTests]: class path resource [desafio/ibm/app/DesafioApplicationTests-context.xml] does not exist
+17:49:56.004 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [desafio.ibm.app.DesafioApplicationTests]: class path resource [desafio/ibm/app/DesafioApplicationTestsContext.groovy] does not exist
+17:49:56.008 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [desafio.ibm.app.DesafioApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:49:56.011 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [desafio.ibm.app.DesafioApplicationTests]: DesafioApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:49:56.253 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [desafio.ibm.app.DesafioApplicationTests]
+17:49:56.483 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/enison/Documents/desafio/target/classes/desafio/ibm/app/DesafioApplication.class]
+17:49:56.486 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration desafio.ibm.app.DesafioApplication for test class desafio.ibm.app.DesafioApplicationTests
+17:49:56.728 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [desafio.ibm.app.DesafioApplicationTests]: using defaults.
+17:49:56.730 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:49:56.781 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@20ca951f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d778add, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@73302995, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1838ccb8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c2ed0cd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d9e8ef7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f107c50, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51133c06, org.springframework.test.context.event.EventPublishingTestExecutionListener@4b213651, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4241e0f4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4ebff610, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@60410cd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@44d52de2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@95e33cc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@38604b81]
+17:49:56.788 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6bc407fd testClass = DesafioApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@291f18 testClass = DesafioApplicationTests, locations = '{}', classes = '{class desafio.ibm.app.DesafioApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@17d88132 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e84448c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5403f35f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@383bfa16, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@f736069, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1af2d44a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1786dec2], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:49:56.917 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.4)
+
+2022-04-05 17:49:57.547  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : Starting DesafioApplicationTests using Java 11.0.14.1 on enison-Inspiron-3442 with PID 328124 (started by enison in /home/enison/Documents/desafio)
+2022-04-05 17:49:57.556  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : No active profile set, falling back to default profiles: default
+2022-04-05 17:49:57.556 DEBUG 328124 --- [           main] o.s.boot.SpringApplication               : Loading source class desafio.ibm.app.DesafioApplication
+2022-04-05 17:49:57.623 DEBUG 328124 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42a9e5d1
+2022-04-05 17:49:58.805  INFO 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-05 17:49:58.812 DEBUG 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for Reactive MongoDB repositories in packages desafio.ibm.app.
+2022-04-05 17:49:58.827 DEBUG 328124 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/enison/Documents/desafio/target/classes/desafio/ibm/app/repository/AddressRepository.class]
+2022-04-05 17:49:58.828 DEBUG 328124 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/enison/Documents/desafio/target/classes/desafio/ibm/app/repository/CustomerRepository.class]
+2022-04-05 17:49:59.083  INFO 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 269 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-04-05 17:49:59.101  INFO 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-05 17:49:59.102 DEBUG 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for MongoDB repositories in packages desafio.ibm.app.
+2022-04-05 17:49:59.112 DEBUG 328124 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/enison/Documents/desafio/target/classes/desafio/ibm/app/repository/AddressRepository.class]
+2022-04-05 17:49:59.113 DEBUG 328124 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/enison/Documents/desafio/target/classes/desafio/ibm/app/repository/CustomerRepository.class]
+2022-04-05 17:49:59.160  INFO 328124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 MongoDB repository interfaces.
+2022-04-05 17:49:59.855  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[api-database:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-05 17:49:59.944  INFO 328124 --- [-database:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server api-database:27017
+
+com.mongodb.MongoSocketException: api-database: Temporary failure in name resolution
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.1.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: api-database: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.1.2.jar:na]
+	... 6 common frames omitted
+
+2022-04-05 17:50:00.076 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Locale to class java.lang.String as writing converter.
+2022-04-05 17:50:00.076 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Character to class java.lang.String as writing converter.
+2022-04-05 17:50:00.077 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigDecimal to class java.lang.String as writing converter.
+2022-04-05 17:50:00.078 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigDecimal to class org.bson.types.Decimal128 as writing converter.
+2022-04-05 17:50:00.078 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.math.BigDecimal as reading converter.
+2022-04-05 17:50:00.078 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.types.Decimal128 to class java.math.BigDecimal as reading converter.
+2022-04-05 17:50:00.079 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigInteger to class java.lang.String as writing converter.
+2022-04-05 17:50:00.079 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.math.BigInteger as reading converter.
+2022-04-05 17:50:00.080 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.net.URL to class java.lang.String as writing converter.
+2022-04-05 17:50:00.080 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.net.URL as reading converter.
+2022-04-05 17:50:00.080 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class java.lang.String as reading converter.
+2022-04-05 17:50:00.081 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.query.Term to class java.lang.String as writing converter.
+2022-04-05 17:50:00.081 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.script.NamedMongoScript to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.081 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.script.NamedMongoScript as reading converter.
+2022-04-05 17:50:00.082 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Currency to class java.lang.String as writing converter.
+2022-04-05 17:50:00.082 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.util.Currency as reading converter.
+2022-04-05 17:50:00.082 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.concurrent.atomic.AtomicInteger to class java.lang.Integer as writing converter.
+2022-04-05 17:50:00.082 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.concurrent.atomic.AtomicLong to class java.lang.Long as writing converter.
+2022-04-05 17:50:00.083 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Long to class java.util.concurrent.atomic.AtomicLong as reading converter.
+2022-04-05 17:50:00.083 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Integer to class java.util.concurrent.atomic.AtomicInteger as reading converter.
+2022-04-05 17:50:00.083 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.types.Binary to class [B as reading converter.
+2022-04-05 17:50:00.083 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.BsonTimestamp to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.084 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.net.URI as reading converter.
+2022-04-05 17:50:00.084 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.net.URI to class java.lang.String as writing converter.
+2022-04-05 17:50:00.084 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Box to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.085 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Polygon to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.085 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Circle to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.086 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.Sphere to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.086 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Box as reading converter.
+2022-04-05 17:50:00.087 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Polygon as reading converter.
+2022-04-05 17:50:00.087 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Circle as reading converter.
+2022-04-05 17:50:00.087 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.Sphere as reading converter.
+2022-04-05 17:50:00.087 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Point as reading converter.
+2022-04-05 17:50:00.088 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Point to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.088 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.query.GeoCommand to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.089 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from interface org.springframework.data.mongodb.core.geo.GeoJson to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.089 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.GeoJsonPoint to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.090 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.GeoJsonPolygon to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.090 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonPoint as reading converter.
+2022-04-05 17:50:00.090 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonPolygon as reading converter.
+2022-04-05 17:50:00.091 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonLineString as reading converter.
+2022-04-05 17:50:00.091 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiLineString as reading converter.
+2022-04-05 17:50:00.092 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiPoint as reading converter.
+2022-04-05 17:50:00.092 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiPolygon as reading converter.
+2022-04-05 17:50:00.093 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonGeometryCollection as reading converter.
+2022-04-05 17:50:00.093 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to interface org.springframework.data.mongodb.core.geo.GeoJson as reading converter.
+2022-04-05 17:50:00.093 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+2022-04-05 17:50:00.094 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+2022-04-05 17:50:00.094 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+2022-04-05 17:50:00.094 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+2022-04-05 17:50:00.094 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+2022-04-05 17:50:00.095 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+2022-04-05 17:50:00.095 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.095 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+2022-04-05 17:50:00.096 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Skipping converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. class java.time.LocalDateTime is not a store supported simple type!
+2022-04-05 17:50:00.096 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Skipping converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. class java.time.Instant is not a store supported simple type!
+2022-04-05 17:50:00.096 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+2022-04-05 17:50:00.096 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+2022-04-05 17:50:00.097 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+2022-04-05 17:50:00.103 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+2022-04-05 17:50:00.104 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Period to class java.lang.String as writing converter.
+2022-04-05 17:50:00.104 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Period as reading converter.
+2022-04-05 17:50:00.105 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+2022-04-05 17:50:00.105 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+2022-04-05 17:50:00.105 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.377 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Locale to class java.lang.String as writing converter.
+2022-04-05 17:50:00.378 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Character to class java.lang.String as writing converter.
+2022-04-05 17:50:00.378 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigDecimal to class java.lang.String as writing converter.
+2022-04-05 17:50:00.382 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigDecimal to class org.bson.types.Decimal128 as writing converter.
+2022-04-05 17:50:00.382 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.math.BigDecimal as reading converter.
+2022-04-05 17:50:00.383 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.types.Decimal128 to class java.math.BigDecimal as reading converter.
+2022-04-05 17:50:00.392 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.math.BigInteger to class java.lang.String as writing converter.
+2022-04-05 17:50:00.398 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.math.BigInteger as reading converter.
+2022-04-05 17:50:00.406 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.net.URL to class java.lang.String as writing converter.
+2022-04-05 17:50:00.407 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.net.URL as reading converter.
+2022-04-05 17:50:00.408 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class java.lang.String as reading converter.
+2022-04-05 17:50:00.408 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.query.Term to class java.lang.String as writing converter.
+2022-04-05 17:50:00.408 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.script.NamedMongoScript to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.412 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.script.NamedMongoScript as reading converter.
+2022-04-05 17:50:00.413 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Currency to class java.lang.String as writing converter.
+2022-04-05 17:50:00.413 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.util.Currency as reading converter.
+2022-04-05 17:50:00.413 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.concurrent.atomic.AtomicInteger to class java.lang.Integer as writing converter.
+2022-04-05 17:50:00.413 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.concurrent.atomic.AtomicLong to class java.lang.Long as writing converter.
+2022-04-05 17:50:00.413 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Long to class java.util.concurrent.atomic.AtomicLong as reading converter.
+2022-04-05 17:50:00.417 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.Integer to class java.util.concurrent.atomic.AtomicInteger as reading converter.
+2022-04-05 17:50:00.417 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.types.Binary to class [B as reading converter.
+2022-04-05 17:50:00.417 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.BsonTimestamp to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.417 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.net.URI as reading converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.net.URI to class java.lang.String as writing converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Box to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Polygon to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Circle to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.Sphere to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.418 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Box as reading converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Polygon as reading converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Circle as reading converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.Sphere as reading converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.geo.Point as reading converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.geo.Point to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.419 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.query.GeoCommand to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from interface org.springframework.data.mongodb.core.geo.GeoJson to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.GeoJsonPoint to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.springframework.data.mongodb.core.geo.GeoJsonPolygon to class org.bson.Document as writing converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonPoint as reading converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonPolygon as reading converter.
+2022-04-05 17:50:00.420 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonLineString as reading converter.
+2022-04-05 17:50:00.421 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiLineString as reading converter.
+2022-04-05 17:50:00.421 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiPoint as reading converter.
+2022-04-05 17:50:00.421 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonMultiPolygon as reading converter.
+2022-04-05 17:50:00.431 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to class org.springframework.data.mongodb.core.geo.GeoJsonGeometryCollection as reading converter.
+2022-04-05 17:50:00.431 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class org.bson.Document to interface org.springframework.data.mongodb.core.geo.GeoJson as reading converter.
+2022-04-05 17:50:00.431 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter.
+2022-04-05 17:50:00.431 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter.
+2022-04-05 17:50:00.432 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalDate as reading converter.
+2022-04-05 17:50:00.432 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalDate to class java.util.Date as writing converter.
+2022-04-05 17:50:00.432 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.LocalTime as reading converter.
+2022-04-05 17:50:00.433 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.LocalTime to class java.util.Date as writing converter.
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.util.Date to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Instant to class java.util.Date as writing converter.
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Skipping converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. class java.time.LocalDateTime is not a store supported simple type!
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Skipping converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. class java.time.Instant is not a store supported simple type!
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.ZoneId to class java.lang.String as writing converter.
+2022-04-05 17:50:00.435 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.ZoneId as reading converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Duration to class java.lang.String as writing converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Duration as reading converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.time.Period to class java.lang.String as writing converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Period as reading converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDate as reading converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter.
+2022-04-05 17:50:00.436 DEBUG 328124 --- [           main] o.s.data.convert.CustomConversions       : Adding converter from class java.lang.String to class java.time.Instant as reading converter.
+2022-04-05 17:50:00.812 DEBUG 328124 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for desafio.ibm.app.repository.CustomerRepository…
+2022-04-05 17:50:00.959 DEBUG 328124 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for {}.
+2022-04-05 17:50:00.967 DEBUG 328124 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for desafio.ibm.app.repository.AddressRepository…
+2022-04-05 17:50:00.978 DEBUG 328124 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for {}.
+2022-04-05 17:50:01.733 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-05 17:50:01.994  INFO 328124 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-05 17:50:02.427  INFO 328124 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-05 17:50:02.480 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-05 17:50:02.599 DEBUG 328124 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-05 17:50:02.623 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-05 17:50:02.752  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[api-database:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-05 17:50:02.768  INFO 328124 --- [-database:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server api-database:27017
+
+com.mongodb.MongoSocketException: api-database
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream.openAsync(AsynchronousSocketChannelStream.java:60) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.AsynchronousChannelStream.open(AsynchronousChannelStream.java:124) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.1.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: api-database
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.1.2.jar:na]
+	... 6 common frames omitted
+
+2022-04-05 17:50:03.029 DEBUG 328124 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-04-05 17:50:03.029 DEBUG 328124 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2022-04-05 17:50:03.042  INFO 328124 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-05 17:50:03.042  INFO 328124 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-05 17:50:03.045  INFO 328124 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2022-04-05 17:50:03.078  INFO 328124 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-04-05 17:50:03.121  INFO 328124 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-04-05 17:50:03.198  INFO 328124 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-04-05 17:50:03.533  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : Started DesafioApplicationTests in 6.602 seconds (JVM running for 8.8)
+2022-04-05 17:50:03.994  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+2022-04-05 17:50:04.040 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to desafio.ibm.app.controller.CustomerController#edit(CustomerRequest)
+2022-04-05 17:50:04.193 DEBUG 328124 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [desafio.ibm.app.request.CustomerRequest@f287a4e]
+2022-04-05 17:50:04.300 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, address, neigborHood, zipCode, city, number, state, addressTypeId, _class]
+2022-04-05 17:50:04.360  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-04-05 17:50:04.365  INFO 328124 --- [-database:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server api-database:27017
+
+com.mongodb.MongoSocketException: api-database
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) ~[mongodb-driver-core-4.1.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.1.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: api-database
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.1.2.jar:na]
+	... 6 common frames omitted
+
+2022-04-05 17:50:34.365 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler desafio.ibm.app.controller.ErrorContoller#exception(Exception, WebRequest)
+2022-04-05 17:50:34.391 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-05 17:50:34.392 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [desafio.ibm.app.controller.ErrorContoller$Response@3ee68eb2]
+2022-04-05 17:50:34.402 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]]
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /customer/edit
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"267"]
+             Body = {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#edit(CustomerRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /customer/edit
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"267"]
+             Body = {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#edit(CustomerRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="validSearchAllController" classname="desafio.ibm.app.DesafioApplicationTests" time="30.21">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validSearchAllController(DesafioApplicationTests.java:95)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:50:34.521 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to desafio.ibm.app.controller.CustomerController#searchAll()
+2022-04-05 17:50:34.605 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class desafio.ibm.app.document.Customer in collection: customer
+2022-04-05 17:50:34.635  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-04-05 17:51:04.637 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler desafio.ibm.app.controller.ErrorContoller#exception(Exception, WebRequest)
+2022-04-05 17:51:04.638 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-05 17:51:04.639 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [desafio.ibm.app.controller.ErrorContoller$Response@4b9dc62f]
+2022-04-05 17:51:04.641 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customer/searchAll
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = 
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchAll()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customer/searchAll
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = 
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchAll()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="validsearchIntegrationOneController" classname="desafio.ibm.app.DesafioApplicationTests" time="30.165">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validsearchIntegrationOneController(DesafioApplicationTests.java:110)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:51:04.679  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+2022-04-05 17:51:04.682 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to desafio.ibm.app.controller.CustomerController#searchOne(CustomerParams)
+2022-04-05 17:51:04.695 DEBUG 328124 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [desafio.ibm.app.request.CustomerParams@16cbba0f]
+2022-04-05 17:51:04.700  INFO 328124 --- [           main] d.ibm.app.controller.CustomerController  : buscando clienteEnison Oliveira
+2022-04-05 17:51:04.798 DEBUG 328124 --- [           main] o.s.d.m.r.query.StringBasedMongoQuery    : Created query Document{{name=Enison Oliveira}} for Document{{}} fields.
+2022-04-05 17:51:04.820 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Enison Oliveira"} fields: Document{{}} for class: class desafio.ibm.app.document.Customer in collection: customer
+2022-04-05 17:51:04.821  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-04-05 17:51:34.823 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler desafio.ibm.app.controller.ErrorContoller#exception(Exception, WebRequest)
+2022-04-05 17:51:34.824 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-05 17:51:34.824 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [desafio.ibm.app.controller.ErrorContoller$Response@2d36add1]
+2022-04-05 17:51:34.825 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customer/searchOne
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"267"]
+             Body = {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchOne(CustomerParams)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customer/searchOne
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"267"]
+             Body = {"customerId":"1231247454545","name":"Enison Oliveira","cpf":"12345828","address":{"addressId":"12312312312","address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchOne(CustomerParams)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="validDeleteIntegrationController" classname="desafio.ibm.app.DesafioApplicationTests" time="30.13">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validDeleteIntegrationController(DesafioApplicationTests.java:85)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:51:34.847 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to desafio.ibm.app.controller.CustomerController#searchList(String)
+2022-04-05 17:51:34.950 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : "1"} in collection: customer.
+2022-04-05 17:51:34.962  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-04-05 17:52:04.963 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler desafio.ibm.app.controller.ErrorContoller#exception(Exception, WebRequest)
+2022-04-05 17:52:04.964 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-05 17:52:04.965 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [desafio.ibm.app.controller.ErrorContoller$Response@1b96d447]
+2022-04-05 17:52:04.966 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]]
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /customer/delete/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = 
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchList(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /customer/delete/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = 
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#searchList(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="addressUnitTestServiceSave" classname="desafio.ibm.app.DesafioApplicationTests" time="29.973">
+    <failure message="expected: &lt;: Operação não permitida, nome do cliente obrigatório!&gt; but was: &lt;Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <: Operação não permitida, nome do cliente obrigatório!> but was: <Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]>
+	at desafio.ibm.app.DesafioApplicationTests.addressUnitTestServiceSave(DesafioApplicationTests.java:163)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:52:04.984 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [address, neigborHood, zipCode, city, number, state, addressTypeId, _class] in collection: address
+2022-04-05 17:52:04.986  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+]]></system-out>
+  </testcase>
+  <testcase name="addressUnitTestServiceInvalidStateSave" classname="desafio.ibm.app.DesafioApplicationTests" time="0.006"/>
+  <testcase name="validInsertIntegrationController" classname="desafio.ibm.app.DesafioApplicationTests" time="30.068">
+    <failure message="Status expected:&lt;201&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<201> but was:<404>
+	at desafio.ibm.app.DesafioApplicationTests.validInsertIntegrationController(DesafioApplicationTests.java:60)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:52:35.009  INFO 328124 --- [           main] desafio.ibm.app.DesafioApplicationTests  : {"name":"Enison Oliveira","cpf":"12345828","address":{"address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+2022-04-05 17:52:35.010 DEBUG 328124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to desafio.ibm.app.controller.CustomerController#create(CustomerParams)
+2022-04-05 17:52:35.011 DEBUG 328124 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [desafio.ibm.app.request.CustomerParams@2b66bf1c]
+2022-04-05 17:52:35.012  INFO 328124 --- [           main] d.ibm.app.controller.CustomerController  : inserindo clienteEnison Oliveira
+2022-04-05 17:52:35.013  INFO 328124 --- [           main] d.ibm.app.controller.CustomerController  : inserindo endereçoGodoy de assupção
+2022-04-05 17:52:35.013  INFO 328124 --- [           main] d.ibm.app.controller.CustomerController  : tipo endereçoAIRPORT
+2022-04-05 17:52:35.014 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [address, neigborHood, zipCode, city, number, state, addressTypeId, _class] in collection: address
+2022-04-05 17:52:35.014  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-04-05 17:53:05.016 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler desafio.ibm.app.controller.ErrorContoller#exception(Exception, WebRequest)
+2022-04-05 17:53:05.017 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-05 17:53:05.018 DEBUG 328124 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [desafio.ibm.app.controller.ErrorContoller$Response@47eff554]
+2022-04-05 17:53:05.019 DEBUG 328124 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customer/save
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"212"]
+             Body = {"name":"Enison Oliveira","cpf":"12345828","address":{"address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#create(CustomerParams)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customer/save
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"212"]
+             Body = {"name":"Enison Oliveira","cpf":"12345828","address":{"address":"Godoy de assupção","neigborHood":"Park das abelhas","zipCode":"3852-200","city":" Curitiba","number":123,"state":"PR","AddressTypeId":"AIRPORT"}}
+    Session Attrs = {}
+
+Handler:
+             Type = desafio.ibm.app.controller.CustomerController
+           Method = desafio.ibm.app.controller.CustomerController#create(CustomerParams)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.dao.DataAccessResourceFailureException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"message":"Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="customerUnitTestServiceSaveCPFInvalid" classname="desafio.ibm.app.DesafioApplicationTests" time="29.979">
+    <failure message="expected: &lt;: Operação não permitida, dados imcompletos, CPF obrigatório!&gt; but was: &lt;Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <: Operação não permitida, dados imcompletos, CPF obrigatório!> but was: <Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-database:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-database}, caused by {java.net.UnknownHostException: api-database}}]>
+	at desafio.ibm.app.DesafioApplicationTests.customerUnitTestServiceSaveCPFInvalid(DesafioApplicationTests.java:145)
+]]></failure>
+    <system-out><![CDATA[2022-04-05 17:53:05.044 DEBUG 328124 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [address, neigborHood, zipCode, city, number, state, addressTypeId, _class] in collection: address
+2022-04-05 17:53:05.044  INFO 328124 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+]]></system-out>
+  </testcase>
+  <testcase name="contextLoads" classname="desafio.ibm.app.DesafioApplicationTests" time="0.004"/>
+  <testcase name="addressUnitTestServiceInvalidCitySave" classname="desafio.ibm.app.DesafioApplicationTests" time="0.008"/>
+  <testcase name="customerUnitTestServiceSave" classname="desafio.ibm.app.DesafioApplicationTests" time="0.009"/>
+</testsuite>
